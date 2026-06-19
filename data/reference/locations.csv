@@ -1,0 +1,7 @@
+location_id,city,country_code,country_name,latitude,longitude,region,climate_zone
+HEL,Helsinki,FI,Finland,60.1699,24.9384,Nordics,cool_temperate
+STO,Stockholm,SE,Sweden,59.3293,18.0686,Nordics,cool_temperate
+OSL,Oslo,NO,Norway,59.9139,10.7522,Nordics,cool_temperate
+CPH,Copenhagen,DK,Denmark,55.6761,12.5683,Nordics,cool_temperate
+BER,Berlin,DE,Germany,52.52,13.405,Central Europe,temperate
+AMS,Amsterdam,NL,Netherlands,52.3676,4.9041,Western Europe,temperate
