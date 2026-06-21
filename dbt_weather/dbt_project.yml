@@ -1,0 +1,30 @@
+name: 'dbt_weather'
+version: '1.0.0'
+config-version: 2
+
+profile: 'week7_sqlserver'
+
+flags:
+  dbt_sqlserver_use_native_string_types: true
+
+model-paths: ['models']
+macro-paths: ['macros']
+test-paths: ['tests']
+
+models:
+  dbt_weather:
+    00_setup_check:
+      +materialized: view
+      +tags: [setup_check]
+
+    bronze:
+      +materialized: view
+      +tags: [bronze]
+
+    silver:
+      +materialized: view
+      +tags: [silver]
+
+    gold:
+      +materialized: table
+      +tags: [gold, reporting]
